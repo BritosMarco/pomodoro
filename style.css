@@ -1,0 +1,64 @@
+* {
+ padding: 0;
+ margin: 0;
+ 
+}
+
+body{
+    background-color: #fff;
+    /* background-image: url(./img/medicina.jpg); */
+    background-repeat: no-repeat;
+
+    /* background-size:cover; */
+}
+
+label{
+    color: #f01414;
+}
+
+input{
+    display: flex;
+    justify-content: space-around !important;
+    height: 150px ! important;
+    width: 150px ! important;
+    font-size: 50pt ! important;
+    text-align: center ! important;
+    background-color: #00000020 !important;
+
+} 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]{
+    -moz-appearance: none;
+}
+
+.time{
+    color: #f01414;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto !important;
+    background-image: url(./img/estestocopio.jpg);
+    background-repeat: no-repeat; 
+    background-size:cover;
+
+}
+H2{
+    font-size: 90pt;
+}
+#timer{
+    display:none !important;
+}
+
+#fim h1{
+    color: #28a745 !important;
+}
+
