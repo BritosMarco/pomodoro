@@ -12,8 +12,9 @@
 </head>
 <body>
     <!-- inicio Menu -->
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <a class="navbar-brand font-weith-bold text-white" href="index.html">Timer Pomodoro</a>
+      <a class="navbar-brand font-weith-bold text-white" href="index.html">Timer Pomodoro</a> 
 
         <div class = "ml-auto">
             <a onclick="pausar()">
@@ -29,39 +30,46 @@
       </nav>
       <!-- FIM do MENU -->
       <!-- Inicio do Container -->
-      <div class="container">
+    <section id="tecnica">
+        <div>
+            <img src="./img/tecnica_pomodoro.png" alt="">
+        </div>
+    </section>
+
+    <div class="central">
+      <div class="container justify-content-center">
           <!-- Config -->
-          <div calss= "row d-flex justify-content-center">
-                <div class= "col-md-8 d-flex justify-content-center">
+          <div calss= "row d-flex "> 
+                <div class= "col-md-12 d-flex justify-content-center "> <!-- *** -->
                   
-                    <div id="config" calss= "row d-flex justify-content-center">
+                    <div id="config" calss= "row d-flex "> 
                         <div class="col">
                               <!-- Inputs -->
-                            <div class="row d-flex justify-content-center mt-5 mb-5">
+                            <div class="row d-flex  mt-5 mb-5">
 
-                                <div class="col-md-3 d-flex justify-content-center">
+                                <div class="col-md-4 d-flex ">
                                   
                                     <div class="form-group">
-                                        <label for="acao" class="d-flex justify-content-center  font-weith-bold">Concentrar</label>
-                                        <input type="number" class="form-control form-control-lg  border-0  shadow text-danger" id="acao">
+                                        <label for="acao" class="d-flex justify-content-center font-weith-bold">Concentrar</label> 
+                                        <input type="number" class="form-control form-control-lg bg-danger rounded-circle border-0  shadow text-white" id="acao">
                                         <small class= "text-danger" id="erro_acao"></small>
                                     </div>
                                 </div>
 
                                 <!-- bg-dark  bg-dark   -->
 
-                                    <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="col-md-4 d-flex justify-content-center">
                                         <div class="form-group">
                                             <label for="pausa" class="d-flex justify-content-center font-weith-bold">Pausar</label>
-                                            <input type="number" class="form-control form-control-lg border-0  shadow text-dark " id="pausa">
+                                            <input type="number" class="form-control form-control-lg bg-danger rounded-circle border-0  shadow text-white" id="pausa">
                                             <small class= "text-danger" id="erro_pausa"></small>
                                         </div>
                                     </div>
 
-                                    <div class="col-md-3 d-flex justify-content-center">
+                                    <div class="col-md-4 d-flex justify-content-center">
                                         <div class="form-group">
-                                            <label for="sessoes" class="d-flex justify-content-center  font-weith-bold">Sessões</label>
-                                            <input type="number" class="form-control form-control-lg border-0  shadow text-primary" id="sessoes">
+                                            <label for="sessoes" class="d-flex justify-content-center font-weith-bold">Sessões</label>
+                                            <input type="number" class="form-control form-control-lg bg-danger rounded-circle border-0  shadow text-white" id="sessoes">
                                             <small class= "text-danger" id="erro_sessoes"></small>
                                         </div>
                                     </div>
@@ -119,7 +127,7 @@
 
               <div class="row mb-3 mt-5">
                 <div class="col">
-                    <h3 id="title_sessao" class="text-center text-secundary text-danger"></h3>
+                    <h4 id="title_sessao" class="text-center text-secundary text-danger"></h4>
                 </div>
             </div>
 
@@ -139,6 +147,7 @@
             </div>
 
         </div>
+    </div>
       <!-- Fim do Container -->
 
     
