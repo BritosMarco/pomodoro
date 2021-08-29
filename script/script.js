@@ -59,7 +59,7 @@ function momentoAcao(){
 
         let title = document.getElementById('title')
         title.innerHTML = "Concentração Total"
-        title.style.fontSize = '25pt'
+        title.style.fontSize = '18pt'
         title.style.fontWeight = 'bold'
         title.style.setProperty('color', '#28a745', 'important')
 
@@ -135,6 +135,8 @@ function momentoPausa(){
                         document.getElementById('config').style.setProperty('display', 'none', 'important')
                         document.getElementById('timer').style.setProperty('display', 'none', 'important')
                         document.getElementById('fim').style.setProperty('display', 'block', 'important')
+                        clearInterval(min_interval);
+                        clearInterval(seg_interval);
                     }else{
                         volta.play()
                         momentoAcao()
