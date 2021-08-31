@@ -114,7 +114,7 @@ function momentoPausa(){
         
         function minTimer(){
             min_pausa = min_pausa-1
-            document.getElementById('minutes_ok').innerText = min
+            document.getElementById('minutes_ok').innerText = min_pausa
         }
 
         function segTimer(){
